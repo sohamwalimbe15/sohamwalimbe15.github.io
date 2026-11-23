@@ -6,7 +6,7 @@ Files: `index.html` (all content), `style.css`, `script.js`, `academic_cv.pdf` (
 
 ## Publish on GitHub Pages
 
-1. On GitHub, create a **public** repository named exactly `Sohamwalimbe.github.io` (no README, no .gitignore, no license).
+1. On GitHub, create a **public** repository named exactly `sohamwalimbe15.github.io` (no README, no .gitignore, no license).
 2. In this folder, run:
 
    ```sh
@@ -15,13 +15,13 @@ Files: `index.html` (all content), `style.css`, `script.js`, `academic_cv.pdf` (
    git add index.html style.css script.js academic_cv.pdf check.py README.md
    git add photo.jpg   # only if you added one
    git commit -m "Initial website"
-   git remote add origin https://github.com/Sohamwalimbe/Sohamwalimbe.github.io.git
+   git remote add origin https://github.com/sohamwalimbe15/sohamwalimbe15.github.io.git
    git push -u origin main
    ```
 
    `academic_cv.tex` is not needed by the site. Add it too if you want it in the repo.
 3. On GitHub: **Settings → Pages → Build and deployment**. Set Source to **Deploy from a branch**, Branch to **main**, folder to **/ (root)**, then Save.
-4. After a minute or two the site is live at <https://sohamwalimbe.github.io>.
+4. After a minute or two the site is live at <https://sohamwalimbe15.github.io>.
 
 ## Update content later
 
