@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soham Walimbe</title>
+  <meta name="description" content="Soham Walimbe, AI Scientist at Qure.ai. Diffusion models, representation learning, medical and geospatial AI.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav aria-label="Sections">
+      <a class="brand" href="#top">Soham Walimbe</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#research-projects">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#more">Awards &amp; Education</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <figure class="photo">
+        <img src="photo.jpg" alt="Portrait of Soham Walimbe" width="160" height="160"
+             onerror="this.parentElement.hidden=true">
+      </figure>
+      <div>
+        <h1>Soham Walimbe</h1>
+        <p class="tagline">AI Scientist at Qure.ai | Diffusion models, representation learning, medical and geospatial AI</p>
+        <ul class="links">
+          <li><a href="https://github.com/Sohamwalimbe">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/soham-walimbe-41ba49247/">LinkedIn</a></li>
+          <li><a href="mailto:sohamwalimbe15@gmail.com">Email</a></li>
+          <li><a href="#" data-todo="Google Scholar">Google Scholar</a></li>
+        </ul>
+        <p><a class="button" href="academic_cv.pdf" download>Download CV (PDF)</a></p>
+      </div>
+    </section>
+
+    <section class="wrap" id="about">
+      <h2>About</h2>
+      <p>I am an AI Scientist at Qure.ai in Bangalore, where I work on lung-nodule analysis in chest CT. I completed my degree in Electronics and Communication Engineering, with a Minor in Data Science, at BITS Pilani, Goa Campus in July 2025.</p>
+      <p>My bachelor's thesis at CAMMA (University of Strasbourg, CNRS) adapted CLIP for multi-task surgical computer vision and was published at MICCAI 2025, where it was nominated for the Best Paper and Young Scientist Awards. Before that, I did a research internship at CSIR-CEERI on anomaly segmentation in baggage X-rays. I am currently also working on learned on-board compression of satellite SAR data with complex-valued networks.</p>
+    </section>
+
+    <section class="wrap" id="experience">
+      <h2>Research Experience</h2>
+
+      <article class="entry">
+        <header>
+          <h3>AI Scientist, Qure.ai <span class="loc">Bangalore</span></h3>
+          <p class="date">Jul 2025 – Present</p>
+        </header>
+        <p class="sub">qCT: FDA-cleared AI for lung-nodule detection, quantification and characterization in chest CT</p>
+        <ul>
+          <li>Developed the nodule-growth prediction model for the Lung Nodule Malignancy Score (LNMS); identified label noise as the main bottleneck, and a move to external data raised AUC from 0.58 to 0.76.</li>
+          <li>Led development of the false-positive reduction model for the FDA-cleared detection pipeline, raising precision by ~15 points at unchanged recall.</li>
+          <li>Improved nodule measurement: raised Dice on large nodules (&gt;30 mm) from ~0.25 to 0.70 with a training-free resampling strategy, and brought diameter error to 0.8 mm MAE.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <header>
+          <h3>Research Intern, CAMMA <span class="loc">University of Strasbourg, CNRS</span></h3>
+          <p class="date">Jul 2024 – Dec 2024</p>
+        </header>
+        <p class="sub">Bachelor's thesis: Adaptation of Multi-modal Representation Models for Multi-Task Surgical Computer Vision. Supervisors: Dr. Britty Baby, Prof. Nicolas Padoy</p>
+        <ul>
+          <li>Developed MML-SurgAdapt, a unified multi-task framework that adapts CLIP through natural-language supervision for surgical phase recognition, action-triplet recognition and Critical View of Safety (CVS) assessment.</li>
+          <li>Extended Single Positive Multi-Label (SPML) learning to partially annotated data across tasks, its first use for integrating multiple surgical tasks; one model performed comparably to task-specific models (74.16 F1 phase, 30.32 mAP triplets, 55.88 mAP CVS).</li>
+          <li>Ran the full quantitative evaluation of CoSimGen, a controllable diffusion model that jointly generates images and segmentation masks, against 4 generative baselines across 5 datasets on 6 metrics. Supervisor: Mr. Rupak Bose.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <header>
+          <h3>Machine Learning Research Intern, CSIR-CEERI <span class="loc">Pilani</span></h3>
+          <p class="date">May 2023 – Jul 2023</p>
+        </header>
+        <p class="sub">Supervisor: Dr. Dhiraj Sangwan</p>
+        <ul>
+          <li>Implemented an unsupervised anomaly segmentation framework that flags contraband (e.g., guns, knives) in baggage X-rays from UNet reconstruction errors, trained only on normal scans.</li>
+          <li>Clustered anomalous regions into instances with bounding boxes and labels, turning anomaly maps into object detections for airport security screening.</li>
+          <li>Applied Gaussian-Weighted Fourier Stylization (GW-FS) to suppress scanner-specific appearance, improving zero-shot detection when trained on one X-ray dataset and tested on four unseen ones.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="wrap" id="publications">
+      <h2>Publications</h2>
+      <ol class="pubs">
+        <li>
+          <p><strong>S. Walimbe</strong>, B. Baby, V. Srivastav, N. Padoy. <em>Adaptation of Multi-modal Representation Models for Multi-Task Surgical Computer Vision.</em> MICCAI 2025.</p>
+          <p class="pub-meta">
+            <span class="tag tag-pub">Published</span>
+            <a href="https://arxiv.org/abs/2507.05020">arXiv:2507.05020</a>
+          </p>
+          <p class="award">Best Paper &amp; Young Scientist Award nominee</p>
+        </li>
+        <li>
+          <p>R. Bose, C. Nwoye, A. Bhat, <strong>S. Walimbe</strong>, N. Padoy. <em>CoSimGen: Controllable Diffusion Model for Simultaneous Image and Segmentation Mask Generation.</em> Preprint, 2025.</p>
+          <p class="pub-meta">
+            <span class="tag tag-pre">Preprint</span>
+            <a href="https://openreview.net/forum?id=z8rQHF8OOt">OpenReview</a>
+          </p>
+        </li>
+        <li>
+          <p><strong>S. Walimbe</strong> and co-authors. <em>Learned On-Board SAR Compression with Complex-Valued Networks.</em></p>
+          <p class="pub-meta"><span class="tag tag-prep">In preparation</span></p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="wrap" id="research-projects">
+      <h2>Research Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Learned On-Board Compression of SAR Data with Complex-Valued Networks</h3>
+          <p class="date">May 2026 – Present · Mentor: Mr. Rupak Bose</p>
+          <p>A learned compression system for satellite SAR single-look complex (SLC) data: an on-board encoder maps each image to a fixed 2048-value code for downlink, and the ground station reconstructs amplitude and phase. Includes real- and complex-valued hierarchical autoencoders and a conditional flow-matching decoder.</p>
+          <p class="key"><strong>Key result:</strong> 64× fewer values per image; the complex encoder uses half the parameters of the baseline (57M vs. 113M).</p>
+          <ul class="tags"><li>SAR</li><li>Complex-valued networks</li><li>Autoencoders</li><li>Flow matching</li></ul>
+          <p><a href="#" data-todo="GitHub: SAR compression">GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>Neural Datacube for Geospatial Data Discovery and Compression</h3>
+          <p class="date">Mentor: Mr. Rupak Bose</p>
+          <p>A NeRF-inspired neural architecture with a continuous spatiotemporal representation, enabling reconstruction and sampling at arbitrary spatial resolutions. Optimized for CUDA graph compatibility and deployed for edge inference with ONNX Runtime.</p>
+          <p class="key"><strong>Key result:</strong> 20× compression of multispectral satellite imagery.</p>
+          <ul class="tags"><li>NeRF-inspired</li><li>Geospatial</li><li>CUDA graphs</li><li>ONNX Runtime</li></ul>
+          <p><a href="#" data-todo="GitHub: Neural Datacube">GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>Analog Spiking Neural Network for Unsupervised Compression</h3>
+          <p class="date">Aug 2023 – May 2024 · Guide: Dr. Abhijit Pethe, BITS Pilani, Goa Campus</p>
+          <p>An unsupervised spiking network in which rate-coded inputs drive leaky integrate-and-fire neuron circuits through STDP-learning synapse circuits; the firing rates of ~100 output neurons form a compressed representation. Circuits designed in Cadence Virtuoso, network simulated in Brian2.</p>
+          <p class="key"><strong>Key result:</strong> 94.76% accuracy on MNIST from 100 output rates (vs. 784 input pixels).</p>
+          <ul class="tags"><li>Spiking networks</li><li>STDP</li><li>Cadence Virtuoso</li><li>Brian2</li></ul>
+          <p><a href="#" data-todo="GitHub: Analog SNN">GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="projects">
+      <h2>Selected Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Push-T Imitation Learning: Diffusion and Uncertainty-Aware Policies</h3>
+          <p>Four policies built from scratch on a shared ResNet-18 + transformer backbone: an action-chunking transformer (ACT) baseline, a DDPM diffusion policy with DDIM sampling, and two uncertainty-aware policies (masked diffusion and a causally masked autoregressive Gaussian policy).</p>
+          <p class="key"><strong>Setup:</strong> trained on 206 human demonstrations; robustness tested under three visual distribution shifts.</p>
+          <ul class="tags"><li>PyTorch</li></ul>
+          <p><a href="#" data-todo="GitHub: Push-T">GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>Masked-Diffusion Speech Recognition (LLaDA-style)</h3>
+          <p>A 15M-parameter masked-diffusion transformer decoder, trained from scratch on ~60 h of LibriSpeech, that conditions on frozen Whisper-base features and generates transcripts by iterative unmasking. Includes a CPU-only web demo.</p>
+          <p class="key"><strong>Key result:</strong> WER on test-clean falls from 31.3% to 20.8% as decoding steps increase from 8 to 128.</p>
+          <ul class="tags"><li>PyTorch</li><li>Hugging Face</li><li>FastAPI</li></ul>
+          <p><a href="#" data-todo="GitHub: Masked-diffusion ASR">GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>3D Point Cloud Segmentation from Scratch</h3>
+          <p>An end-to-end part and scene segmentation pipeline with no point-cloud libraries, implementing PointNet with input and feature T-Nets, plus an extension with heteroscedastic aleatoric uncertainty.</p>
+          <p class="key"><strong>Key result:</strong> 0.807 instance mIoU on ShapeNetPart.</p>
+          <ul class="tags"><li>PyTorch</li><li>NumPy</li></ul>
+          <p><a href="#" data-todo="GitHub: Point cloud segmentation">GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>Agent Courtroom: LLM Debate for Scalable Oversight</h3>
+          <p>An async implementation of the Khan et al. (2024) debate setup on long-passage QuALITY questions, across four conditions, with quote verification, a statistics suite and a live demo streamed over SSE.</p>
+          <ul class="tags"><li>Python</li><li>asyncio</li><li>FastAPI</li></ul>
+          <p><a href="#" data-todo="GitHub: Agent Courtroom">GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>Prompt-Injection Arena: Defense Benchmark and Public Attack Game</h3>
+          <p>A benchmark of five layered defenses for a sandboxed tool-using agent, scored by a deterministic code judge, with an adaptive LLM red-team agent and a public web game with a leaderboard.</p>
+          <p class="key"><strong>Scale:</strong> 250 labeled attacks and 41 benign tasks.</p>
+          <ul class="tags"><li>Python</li><li>asyncio</li><li>FastAPI</li><li>SQLite</li></ul>
+          <p><a href="#" data-todo="GitHub: Prompt-Injection Arena">GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+    <div class="wrap" id="more">
+      <section aria-labelledby="h-awards">
+        <h2 id="h-awards">Honors &amp; Awards</h2>
+        <ul class="plain">
+          <li>Nominated for the <strong>Best Paper Award</strong> and <strong>Young Scientist Award</strong>, MICCAI 2025.</li>
+          <li><strong>Silver Medal</strong>: ranked 2nd in a graduating batch of 800 students, BITS Pilani, Goa Campus, 2025.</li>
+          <li><strong>Prof. G. Raghurama Outstanding Student Award</strong>, BITS Pilani, Goa Campus, 2025.</li>
+          <li><strong>100% Merit Scholarship</strong> (full tuition waiver) for 7 semesters, BITS Pilani.</li>
+          <li><strong>IPCD Partial Travel Grant</strong> for bachelor's thesis research at CAMMA, Strasbourg; International Programmes and Collaboration Division, BITS Pilani, 2024.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="h-teaching">
+        <h2 id="h-teaching">Teaching</h2>
+        <p class="sub">Undergraduate Teaching Assistant, BITS Pilani, Goa Campus</p>
+        <ul class="plain dated">
+          <li><span>Machine Learning</span><span class="date">Jan 2025 – May 2025</span></li>
+          <li><span>Operating Systems</span><span class="date">Jan 2025 – May 2025</span></li>
+          <li><span>Basic Electronics</span><span class="date">May 2024 – Jul 2024</span></li>
+          <li><span>Microelectronic Circuits</span><span class="date">Jan 2024 – May 2024</span></li>
+          <li><span>Digital Design</span><span class="date">Aug 2023 – Dec 2023</span></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="h-edu">
+        <h2 id="h-edu">Education</h2>
+        <article class="entry">
+          <header>
+            <h3>Birla Institute of Technology and Science (BITS) Pilani, Goa Campus</h3>
+            <p class="date">Oct 2021 – Jul 2025</p>
+          </header>
+          <ul class="plain">
+            <li>Major: Electronics and Communication Engineering. <strong>CGPA 9.84, Dept. Rank 1</strong></li>
+            <li>Minor: Data Science. <strong>CGPA 10/10</strong></li>
+          </ul>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="mailto:sohamwalimbe15@gmail.com">sohamwalimbe15@gmail.com</a></p>
+      <p>Last updated: <time datetime="2026-11-23">23 November 2026</time></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
